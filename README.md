@@ -1,4 +1,4 @@
-﻿# ATRI Voice Data / ATRI 语音数据
+# ATRI Voice Data / ATRI 语音数据
 
 <div align="center">
   <img src="https://img.shields.io/badge/Files-1555-blue" alt="Files">
@@ -8,18 +8,18 @@
 
 ## 📖 介绍 / Introduction
 
-本仓库包含从游戏《ATRI -My Dear Moments-》中提取的 ATRI 角色语音文件，用于 Hexo 博客看板娘功能。
+本仓库包含从游��《ATRI -My Dear Moments-》中提取的 ATRI 角色语音文件，用于 Hexo 博客看板娘功能。
 
 This repository contains ATRI character voice files extracted from the game "ATRI -My Dear Moments-" for use in Hexo blog mascot features.
 
 ## 📁 文件结构 / File Structure
 
-\\\
+```
 atri-voice-data/
 ├── voice/              # 语音文件目录 (1555 个 .opus 文件)
 ├── voice-config.json   # 语音配置文件 (含台词分类)
 └── README.md           # 说明文档
-\\\
+```
 
 ## 🎵 语音分类 / Voice Categories
 
@@ -33,28 +33,28 @@ atri-voice-data/
 
 ### 方法1：直接下载 / Direct Download
 
-\\\ash
-git clone https://github.com/cd d:\GINKA-Blog && hexo generate/atri-voice-data.git
-\\\
+```bash
+git clone https://github.com/Zhouhang9527/atri-voice-data.git
+```
 
 ### 方法2：使用 CDN / Use CDN
 
 通过 jsDelivr 加速访问：
 
-\\\
-https://cdn.jsdelivr.net/gh/cd d:\GINKA-Blog && hexo generate/atri-voice-data@main/voice/ATR_b101_001.opus
-\\\
+```
+https://cdn.jsdelivr.net/gh/Zhouhang9527/atri-voice-data@main/voice/ATR_b101_001.opus
+```
 
 ### 方法3：整合到 Hexo 博客 / Integrate with Hexo
 
-1. 下载 \oice-config.json\
-2. 修改配置中的 \asePath\ 为 CDN 地址：
-   \\\json
+1. 下载 `voice-config.json`
+2. 修改配置中的 `basePath` 为 CDN 地址：
+   ```json
    {
-     "basePath": "https://cdn.jsdelivr.net/gh/cd d:\GINKA-Blog && hexo generate/atri-voice-data@main/voice/"
+     "basePath": "https://cdn.jsdelivr.net/gh/Zhouhang9527/atri-voice-data@main/voice/"
    }
-   \\\
-3. 将配置文件放到 \source/\ 目录
+   ```
+3. 将配置文件放到 `source/` 目录
 4. 使用提供的 JavaScript 代码加载语音
 
 ## ⚖️ 版权声明 / Copyright
